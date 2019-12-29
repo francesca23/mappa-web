@@ -1,0 +1,316 @@
+/* STILI MARKER MAPPA */
+
+/* marker di default */
+
+.icon {
+	width: 22px;
+    height: 22px;
+	background-color: black;
+	border: 1px solid black;
+	color: white;
+	font-family: TradeGothicLTStd-BdCn20, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+    line-height: 1.3em;
+    padding-top: 6px;
+    padding-left: 1.2px;
+}
+
+.icon.selected {
+	padding-top: 6px;
+    padding-left: 1.4px;
+	background: white;
+	border: 1px solid black;
+	color: black;
+    z-index: 999998 !important;
+}
+
+.icon.hasPath {
+    background-color: #000;
+	border: 1px solid #000;
+	padding-top: 6px;
+	padding-left: 1.4px;
+	z-index: -1;
+}
+
+/* INFRASTRUTTURE */
+
+.icon.infrastrutture {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.icon.infrastrutture::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: #b78451;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.icon.infrastrutture:hover {
+	transform: none;
+	z-index: 100000 !important;
+}
+
+.icon.infrastrutture:hover::before {
+	transform: rotate(45deg) scale(1.1, 1.1)!important;
+}
+
+.icon.infrastrutture.selected {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.icon.infrastrutture.selected::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: white;
+	border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg) scale(1.1, 1.1);
+    z-index: -1;
+}
+
+.icon.infrastrutture.hasPath {
+    background-color: transparent;
+    border-color: transparent;
+	/*padding-top: 5px;
+	padding-left: 1.2px;*/
+	z-index: 1000;
+}
+
+.icon.infrastrutture.hasPath::before {
+	content: "";
+    width: 22px;
+    height: 22px;
+	display: block;
+    background-color: #000;
+	top: 0;
+    left: 0;
+	position: absolute;
+	transform: rotate(45deg);
+	z-index: -1;
+}
+
+.icon.infrastrutture.hasPath:hover {
+	transform: none;
+	z-index: 100000 !important;
+}
+
+.icon.infrastrutture.hasPath:hover::before {
+	transform: rotate(45deg) scale(1.1, 1.1) !important;
+}
+
+.icon.infrastrutture.hasPath.selected {
+    background-color: transparent;
+    border-color: transparent;
+	z-index: 100000 !important;
+}
+
+.icon.infrastrutture.hasPath.selected::before {
+    background-color: #fff;
+	border: 1px solid #000;
+	transform: rotate(45deg) scale(1.1, 1.1) !important;
+    z-index: -1;
+}
+
+/* PROMOZIONE CREATIVA */
+
+.icon.promozionecreativa {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.icon.promozionecreativa::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: #b78451;
+	border-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.icon.promozionecreativa:hover {
+	transform: none;
+	z-index: 100000 !important;
+}
+
+.icon.promozionecreativa:hover::before {
+	transform: scale(1.1, 1.1)!important;
+}
+
+.icon.promozionecreativa.selected {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.icon.promozionecreativa.selected::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: white;
+	border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+	transform: scale(1.1, 1.1)!important;
+    z-index: -1;
+}
+
+.icon.promozionecreativa.hasPath {
+    background-color: transparent;
+    border-color: transparent;
+	z-index: 1000;
+}
+
+.icon.promozionecreativa.hasPath::before {
+	content: "";
+    width: 22px;
+    height: 22px;
+	display: block;
+    background-color: #000;
+	border-color: #000;
+	top: 0;
+    left: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.icon.promozionecreativa.hasPath:hover {
+	transform: none;
+}
+
+.icon.promozionecreativa.hasPath:hover::before {
+	transform: scale(1.1, 1.1) !important;
+}
+
+.icon.promozionecreativa.hasPath.selected {
+    background-color: transparent;
+    border-color: transparent;
+	z-index: 100000 !important;
+}
+
+.icon.promozionecreativa.hasPath.selected::before {
+    background-color: #fff;
+	border: 1px solid #000;
+	transform: scale(1.1, 1.1) !important;
+    z-index: -1;
+}
+
+/* PRODUZIONE CREATIVA */
+
+.icon.produzionecreativa {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.icon.produzionecreativa::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: #b78451;
+	border-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.icon.produzionecreativa:hover {
+	transform: none;
+	z-index: 100000 !important;
+}
+
+.icon.produzionecreativa:hover::before {
+	transform: scale(1.1, 1.1)!important;
+}
+
+.icon.produzionecreativa.selected {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.icon.produzionecreativa.selected::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: white;
+	border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+	transform: scale(1.1, 1.1)!important;
+    z-index: -1;
+}
+
+.icon.produzionecreativa.hasPath {
+    background-color: transparent;
+    border-color: transparent;
+	z-index: 1000;
+}
+
+.icon.produzionecreativa.hasPath::before {
+	content: "";
+    width: 22px;
+    height: 22px;
+	display: block;
+    background-color: #000;
+	border-color: #000;
+	top: 0;
+    left: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.icon.produzionecreativa.hasPath:hover {
+	transform: none;
+}
+
+.icon.promozionecreativa.hasPath:hover::before {
+	transform: scale(1.1, 1.1) !important;
+}
+
+.icon.produzionecreativa.hasPath.selected {
+    background-color: transparent;
+    border-color: transparent;
+	z-index: 100000 !important;
+}
+
+.icon.produzionecreativa.hasPath.selected::before {
+    background-color: #fff;
+	border: 1px solid #000;
+	transform: scale(1.1, 1.1) !important;
+    z-index: -1;
+}
+
+/* esempio selettore marker a livelli di zoom definiti */
+/*
+.z18 .icon,
+.z17 .icon,
+.z16 .icon {
+    width: 50px !important;
+    height: 50px !important;
+    margin-top: -25px !important; 
+    margin-left: -25px !important; 
+    border-radius: 25px !important; 
+}
+*/

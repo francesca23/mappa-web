@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8">
+	<title>LSF 2019/2020</title>
+	<link rel="stylesheet" href="base/css/leaflet.css">
+	<link rel="stylesheet" href="custom/css/main.css">
+	<link rel="stylesheet" href="custom/css/sidebar.css">
+	<link rel="stylesheet" href="custom/css/markers.css">
+
+	<script src="base/js/libs/jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script src="base/js/libs/leaflet.js" type="text/javascript"></script>
+
+	<script type="text/template" id="listitemtmpl">
+		<li class="location">
+			<div class="numero"></div>
+			<div class="info">
+				<h3 class="nome"></h3>
+				<span class="indirizzo"></span>
+			</div>
+		</li>
+	</script>
+
+	<script type="text/template" id="detailstmpl">
+		<div class="">
+			<div class="detailsdata">
+				<div class="indirizzo"></div>
+				<div class="descrizione"></div>
+			</div>
+		</div>
+	</script>
+
+</head>
+
+<body>
+	<div id="map"></div>
+	<div id="bordo"></div>
+	<div id="wrapper">	
+		<div id="sidebar">
+			<div class="pane locations">
+				<img id="intestazione" src="assets/cartiglio.png">
+				<div class="header">
+				</div>
+				<div class="contents">
+					<!--<div class="intro">Introduzione...</div>-->
+
+					<!-- Filtri luoghi -->
+					<div class="filters">
+						<label><input type="checkbox" class="infrastrutture" checked="checked"><span class="checkmark"></span>Infrastrutture</label>
+						<label><input type="checkbox" class="promozionecreativa" checked="checked"><span class="checkmark"></span>Promozione creativa</label>
+						<label><input type="checkbox" class="produzionecreativa" checked="checked"><span class="checkmark"></span>Produzione creativa</label><br/>
+					</div>
+					<!-- fine filtri -->
+
+					<ul class="list">
+						<!-- lista luoghi generata dinamicamente -->
+						<!-- lo script inserirà qui i luoghi, caricandoli dal file data.js-->
+					</ul>
+				</div>
+			</div>
+			<div class="pane details">
+				<div class="header">
+					<a href="javascript:void(0)" onclick="back()"><img id="freccia" src="custom/img/freccia.svg"></a>
+					<h2></h2>
+				</div>
+				<div class="contents">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="custom/data/data.js" type="text/javascript"></script>
+	<script src="custom/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
